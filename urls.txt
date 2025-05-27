@@ -1,0 +1,17 @@
+https://raw.githubusercontent.com/cloudboxacademy/covid19/main/raw/main/ecdc_data/cases_deaths.csv
+
+BaseUrl - https://raw.githubusercontent.com
+
+RelativeUrl for each of the file will be
+
+cloudboxacademy/covid19/main/ecdc_data/cases_deaths.csv
+
+cloudboxacademy/covid19/main/ecdc_data/hospital_admissions.csv
+
+cloudboxacademy/covid19/main/ecdc_data/testing.csv
+
+cloudboxacademy/covid19/main/ecdc_data/country_response.csv
+
+
+
+

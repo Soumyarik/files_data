@@ -1,0 +1,34 @@
+Creating Azure DataFactory --> Creating Azure Data Storage --> creating Azure Data lake --> Sql database -->Data studio --> creating blob container for copy method in storage ac and dl
+
+Data flow control(control flow activity) --> handling data every day for new coming files . (validation )---> pipeline -> general-> validation 
+
+using if condition for checking data sets for running .
+
+Activity:
+------------
+
+1. Copy 
+2. Get metadata
+3. If condition 
+4. Delete
+5. Validation
+
+
+Triggers:
+--------------
+1. Schedule 
+2. Tumbling window 
+3. event 
+
+
+1.passing parameter and variables.
+2.using look up activity & for-each activity for loading all the data together in data lake.
+
+
+Data-Flow (ETL):
+--------------------- 
+1.Source Transformation
+2.Filter 
+3.Select
+4.pivot
+5.sink(target)
