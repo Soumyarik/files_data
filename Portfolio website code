@@ -1,0 +1,187 @@
+import React from "react";
+import { CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiReplit, SiPython, SiOracle, SiInformatica } from "react-icons/si";
+import { motion } from "framer-motion";
+
+export default function Portfolio() {
+  const skills = [
+    { icon: SiPython, label: "Python" },
+    { icon: SiOracle, label: "Oracle" },
+    { icon: SiInformatica, label: "Informatica" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-6 font-sans">
+      {/* Header */}
+      <header className="mb-10 text-center">
+        <motion.img
+          src="https://lh3.googleusercontent.com/a/ACg8ocI86dztdWD_bS7KPUvekJWgZgai4rC1g0ECJYXHfjo_JCEB0Ils=s576-c-no"
+          alt="Soumyajit Majumder"
+          className="mx-auto rounded-full w-32 h-32 object-cover mb-4 border-4 border-blue-500"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        />
+        <motion.h1
+          className="text-4xl font-bold hover:text-blue-400 transition duration-300"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Soumyajit Majumder
+        </motion.h1>
+        <p className="text-lg text-gray-400">Software Engineer / Data Engineer</p>
+        <p className="text-sm text-gray-500">
+          Bengaluru • 9330895298 •{' '}
+          <a href="mailto:soumyajitmajumder01@gmail.com" className="text-blue-400 hover:underline">
+            soumyajitmajumder01@gmail.com
+          </a>
+        </p>
+        <div className="flex justify-center space-x-4 mt-4">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-2xl">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com/in/soumyajit-majumder-536127220" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-2xl">
+            <FaLinkedin />
+          </a>
+          <a href="https://replit.com/@SoumyajitMajumder" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-2xl">
+            <SiReplit />
+          </a>
+        </div>
+      </header>
+
+      {/* About Me */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">About Me</h2>
+        <p className="text-gray-300">
+          Detail-oriented and proactive Data Engineer with hands-on experience in ETL development, L3 support,
+          and data integration across cloud and on-premise environments. Skilled in identifying and resolving complex
+          data issues, designing robust ETL pipelines, and aligning data solutions with business requirements.
+          Proficient in Python and SQL, with a strong background in working with Oracle databases, Azure Databricks,
+          and cloud-based integration tools such as Informatica IICS, PowerCenter, and Azure Data Factory.
+        </p>
+      </section>
+
+      {/* Experience */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">Experience</h2>
+        <p className="text-white font-semibold">Software Engineer, Capgemini</p>
+        <p className="text-gray-400 mb-2">Bangalore, India • Jul 2024 – Present</p>
+        <ul className="list-disc pl-5 text-gray-300">
+          <li>Provided L3 support by identifying, analyzing, and resolving ETL/data integration issues.</li>
+          <li>Designed and maintained ETL pipelines using Informatica IICS.</li>
+          <li>Managed job scheduling and execution in IICS (Application and Data Integration modules).</li>
+          <li>Ensured availability and performance through proactive monitoring.</li>
+        </ul>
+      </section>
+
+      {/* Projects */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">Projects</h2>
+        <div className="bg-gray-800 text-white mb-4 hover:shadow-xl hover:scale-[1.02] transition duration-300 rounded">
+          <CardContent className="p-4">
+            <h3 className="text-xl font-semibold">Video Game Analysis (Capgemini)</h3>
+            <p className="text-gray-400 mb-2">ETL project using Informatica PowerCenter</p>
+            <ul className="list-disc pl-5 text-gray-300">
+              <li>Extracted and cleaned data using transformations</li>
+              <li>Loaded data into a data warehouse and database</li>
+              <li>Performed ETL operations based on required output</li>
+            </ul>
+            <p className="mt-2 text-sm text-gray-400">Technologies: Informatica PowerCenter, Oracle SQL</p>
+          </CardContent>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">Skills</h2>
+        <div className="grid grid-cols-2 gap-4 text-gray-300">
+          <div className="hover:bg-gray-800 p-4 rounded transition duration-300">
+            <h4 className="font-semibold text-white">Programming Languages</h4>
+            <p>Python, SQL</p>
+          </div>
+          <div className="hover:bg-gray-800 p-4 rounded transition duration-300">
+            <h4 className="font-semibold text-white">Database & Cloud</h4>
+            <p>Oracle, Azure Databricks</p>
+          </div>
+          <div className="hover:bg-gray-800 p-4 rounded transition duration-300">
+            <h4 className="font-semibold text-white">Data Management</h4>
+            <p>Data Integration, ETL, CDI, CAI</p>
+          </div>
+          <div className="hover:bg-gray-800 p-4 rounded transition duration-300">
+            <h4 className="font-semibold text-white">Tools</h4>
+            <p>Informatica PowerCenter, IICS, Azure Data Factory</p>
+          </div>
+        </div>
+        <div className="flex justify-center space-x-6 mt-6 text-white text-4xl">
+          {skills.map(({ icon: Icon, label }) => (
+            <div key={label} className="flex flex-col items-center hover:text-blue-400 transition duration-300">
+              <Icon />
+              <span className="text-sm mt-1">{label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">Education</h2>
+        <p className="text-white font-semibold">B.Tech, Computer Science</p>
+        <p className="text-gray-400">Guru Nanak Institute of Technology — 8.14 DGPA (2019–2023)</p>
+        <p className="text-white font-semibold mt-2">Higher Secondary</p>
+        <p className="text-gray-400">West Bengal Council of Higher Secondary Education — 75% (2019)</p>
+        <p className="text-white font-semibold mt-2">Secondary</p>
+        <p className="text-gray-400">West Bengal Board of Secondary Education — 72% (2017)</p>
+      </section>
+
+      {/* Certifications */}
+      <section className="mb-10 max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 hover:text-blue-400 transition duration-300">Certifications</h2>
+        <ul className="list-disc pl-5 text-gray-300">
+          <li>IICS: Cloud Data Integration Services R41</li>
+          <li>Data Integration - IICS (Ocean-Capgemini)</li>
+          <li>Informatica Intelligent Cloud Services Course (Udemy)</li>
+        </ul>
+      </section>
+
+      {/* Contact Section */}
+      <section className="max-w-3xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-2 hover:text-blue-400 transition duration-300">Contact</h2>
+        <form
+          action="https://formspree.io/f/mblonrjp"
+          method="POST"
+          className="space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white h-32"
+          />
+          <Button
+            type="submit"
+            className="bg-blue-600 hover:bg-blue-500 text-white transition duration-300"
+          >
+            Send Message
+          </Button>
+        </form>
+      </section>
+    </div>
+  );
+}
