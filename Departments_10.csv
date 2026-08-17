@@ -1,0 +1,11 @@
+dept_id,department,manager,location
+1,HR,Manager_1,Bangalore
+2,Finance,Manager_2,Mumbai
+3,IT,Manager_3,Delhi
+4,Sales,Manager_4,Hyderabad
+5,Marketing,Manager_5,Chennai
+6,Operations,Manager_6,Pune
+7,Admin,Manager_7,Kolkata
+8,Support,Manager_8,Ahmedabad
+9,R&D,Manager_9,Noida
+10,Legal,Manager_10,Jaipur
